@@ -1,0 +1,9 @@
+git clone - Clona o repositório
+
+clear - Limpa o terminal
+
+git add - Adiciona os arquivos não rastreados pendentes as mudanças que irão fazer no commit
+
+git status - Ver os status do repositório local
+
+git commit -m - Criar ponto de marcação no projeto/branch

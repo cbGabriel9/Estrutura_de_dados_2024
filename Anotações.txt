@@ -1,3 +1,5 @@
+COMANDOS DO GIT
+
 git clone - Clona o repositório
 
 clear - Limpa o terminal
@@ -6,4 +8,8 @@ git add - Adiciona os arquivos não rastreados pendentes as mudanças que irão 
 
 git status - Ver os status do repositório local
 
-git commit -m ("Aqui será a mensagem que será passada como título do commit")- Criar ponto de marcação no projeto/branch
+git commit -m "Aqui será a mensagem que será passada como título do commit" - Criar ponto de marcação no projeto/branch
+
+git remote -v - Verificar repositórios remotos configurados no repo local
+
+git push origin main - Enviar commits pendentes para o repo remoto

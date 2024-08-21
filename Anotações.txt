@@ -13,3 +13,19 @@ git commit -m "Aqui será a mensagem que será passada como título do commit" -
 git remote -v - Verificar repositórios remotos configurados no repo local
 
 git push origin main - Enviar commits pendentes para o repo remoto
+
+
+COMANDOS DO DOTNET
+
+dotnet new console -n "Aula01" <- Exemplo - Criar novo projeto Console numa nova pasta
+
+dotnet new console - Criar projeto na pasta atual
+
+dotnet run - Executar programa
+
+dotnet watch run - Executar programa com detalhes
+
+COMANDOS C#
+
+// Comentário de linha
+/* */ Comentário de bloco

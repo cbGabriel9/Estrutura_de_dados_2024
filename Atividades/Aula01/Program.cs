@@ -1,6 +1,6 @@
 ﻿// Declarando variável
 
-const int DAYS_IN_WEEK = 10;
+const int DAYS_IN_WEEK = 7;
 
 //Declarando variável 
 

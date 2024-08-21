@@ -29,3 +29,13 @@ COMANDOS C#
 
 // Comentário de linha
 /* */ Comentário de bloco
+
+LINGUAGEM ORIENTADA A OBJETO
+
+Objeto: Possui características, ações e comportamentos. Exemplos: Pessoa, monitor, cadeira, mesa, cabo e etc...
+Propriedades/atributos: São as características do objeto citado acima. Exemplo (Peso da pessoa, comprimento da mesa, altura do monitor e etc...
+Ações de uma pessoa (Método): O que o objeto pode fazer (ação). Exemplos: O ser humano, corre, andar, fala, pensa e etc...
+Classe: É onde reside as características do objeto, serve como uma forma para criar um objeto. Uma classe é um tipo abstrato (Diferente dos tipos primitivos).
+public Classes _classe = Classes.Guerreiro; //Declaração de uma variável (_classe). O "." é um operador de acesso;
+public Classes GetClasseEnum(string lang) //Criação do método para pegar a classe contida no enumerador. O "Classes" está ali pois é o tipo do retorno daquela função
+Os símbolos de "()" indica uma função, podendo ou não conter um argumento.

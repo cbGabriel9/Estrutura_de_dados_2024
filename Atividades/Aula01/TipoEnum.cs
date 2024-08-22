@@ -5,34 +5,49 @@ using System.Threading.Tasks;
 
 namespace Aula01
 {
-    class TipoEnum //Classe dos enumeradores
+    //Classe dos enumeradores
+    class TipoEnum 
     {
-        public enum Classes //Criando um enumerador
+        //Criando um enumerador
+        public enum Classes 
         {
-            Guerreiro, Arqueiro, Assassino, Mago //Constantes do enumerador
+            //Constantes do enumerador
+            Guerreiro, Arqueiro, Assassino, Mago 
         }
 
-        public Classes _classe = Classes.Guerreiro; //Declaração de uma variável (_classe). O "." é um operador de acesso;
+        //Declaração de uma variável (_classe). O "." é um operador de acesso;
+        public Classes _classes = Classes.Guerreiro; 
 
-        public Classes GetClasseEnum(string _classe) //Criação do método para pegar a classe contida no enumerador. O "Classes" está ali pois é o tipo do retorno daquela função, sendo o que está dentro dos parênteses um parâmetro
+        public TipoEnum()
         {
-            switch (_classe.ToLower())
-            {
-                case "guerreiro":
-                    return Classes.Guerreiro;
 
-                case "arqueiro":
-                    return Classes.Arqueiro;
+        }
 
-                case "assassino":
-                    return Classes.Assassino;
+      /*   public TipoEnum(TipoEnumerador enum)
+        {
+            _classes = enum;
+    } */
+    
+    //Criação do método para pegar a classe contida no enumerador. O "Classes" está ali pois é o tipo do retorno daquela função, sendo o que está dentro dos parênteses um parâmetro
+    public Classes GetClassesEnum(string _classes) 
+    {
+        switch (_classes.ToLower())
+        {
+            case "guerreiro":
+                return Classes.Guerreiro;
 
-                case "mago":
-                    return Classes.Mago;
+            case "arqueiro":
+                return Classes.Arqueiro;
 
-                default :
-                    return Classes.Guerreiro;
-            }
+            case "assassino":
+                return Classes.Assassino;
+
+            case "mago":
+                return Classes.Mago;
+
+            default:
+                return Classes.Guerreiro;
         }
     }
+}
 }

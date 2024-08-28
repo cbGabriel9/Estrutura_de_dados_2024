@@ -23,11 +23,11 @@ namespace Aula01
 
         }
 
-      /*   public TipoEnum(TipoEnumerador enum)
+      /*   public TipoEnum(TipoEnum enum)
         {
             _classes = enum;
     } */
-    
+
     //Criação do método para pegar a classe contida no enumerador. O "Classes" está ali pois é o tipo do retorno daquela função, sendo o que está dentro dos parênteses um parâmetro
     public Classes GetClassesEnum(string _classes) 
     {

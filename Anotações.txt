@@ -48,3 +48,9 @@ public Person(string name, int age) // o "name" e "age" é minúsculo pois são 
 
 public void Realocate (string location) // O void é sinalizado indicando que vai ser um procedimento, então ele só vai executar o código, não terá um resultado no retorno;
 
+public Person ()
+        {
+            Name = "------"; // Quando o método construtor for utilizado e não for passado parâmetros para a construção, a saída será "------";
+        } 
+
+Quando há apenas uma instrução dentro de um escopo de comando, exemplo: If, foreach, for e etc, você não precisa utilizar as chaves;

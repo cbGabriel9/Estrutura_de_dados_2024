@@ -1,4 +1,4 @@
-﻿int[] numbers;
+﻿/* int[] numbers;
 numbers = new int[5];
 
 // Atribuição de valor direta
@@ -29,7 +29,27 @@ for (int i = 0; i <= 12; i++)
 foreach(string m in months)
 {
     Console.WriteLine(m);
+} */
+
+
+int[] num_par = new int[100];
+int[] num_impar = new int[100];
+
+Console.WriteLine("Os números pares armazenados são:");
+
+for (int i = 0; i <= 200; i++){
+    if (i % 2 == 0){
+        num_par[i] = i;
+        Console.WriteLine(i);
+        
+    }
 }
 
+Console.WriteLine("Os números ímpares armazenados são:");
 
-
+for (int i = 0; i <= 200; i++){
+    if (i % 2 != 0){
+        num_impar[i] = i;
+        Console.WriteLine(i);
+    }
+}

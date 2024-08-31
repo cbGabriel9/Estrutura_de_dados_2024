@@ -32,8 +32,8 @@ foreach(string m in months)
 } */
 
 
-int[] num_par = new int[100];
-int[] num_impar = new int[100];
+int[] num_par = new int[201];
+int[] num_impar = new int[201];
 
 Console.WriteLine("Os números pares armazenados são:");
 

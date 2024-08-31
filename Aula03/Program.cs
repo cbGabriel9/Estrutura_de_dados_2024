@@ -31,16 +31,19 @@ foreach(string m in months)
     Console.WriteLine(m);
 } */
 
+//--------------------------------Atividade--------------------------------//
+/* Escreva um algoritmo que armazene em dois vetores separados os primeiros 100 números pares e ímpares. 
+No final, imprima a sequência armazenada em cada um deles. */
 
-int[] num_par = new int[201];
-int[] num_impar = new int[201];
+int[] num_par = new int[201]; // Armazenando os valores pares
+int[] num_impar = new int[201]; // Armazenando os valores pares
 
 Console.WriteLine("Os números pares armazenados são:");
 
 for (int i = 0; i <= 200; i++){
     if (i % 2 == 0){
         num_par[i] = i;
-        Console.WriteLine(i);
+        Console.WriteLine(i); // Utilizando a função para saber o resto da divisão, caso for zero, o número é par
         
     }
 }
@@ -50,6 +53,6 @@ Console.WriteLine("Os números ímpares armazenados são:");
 for (int i = 0; i <= 200; i++){
     if (i % 2 != 0){
         num_impar[i] = i;
-        Console.WriteLine(i);
+        Console.WriteLine(i); // Utilizando a função para saber o resto da divisão, caso for diferente zero, o número é ímpar
     }
 }

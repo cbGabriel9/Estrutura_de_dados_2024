@@ -22,6 +22,8 @@ int[,] iniNumbers = new int[,]
 
     int valor = iniNumbers[0,1]; // Neste caso, posição = 5
     int maiorNum = 0;
+    int rowPos = 0;
+    int colPos = 0;
 
    for(int coluna = 0; coluna < iniNumbers.GetLength(0); coluna++)
    {
@@ -30,8 +32,12 @@ int[,] iniNumbers = new int[,]
         if (iniNumbers[coluna,linha] > maiorNum)
         {
             maiorNum = iniNumbers[coluna,linha];
+            rowPos = coluna;
+            colPos = linha;
         }
     }
    }
 
-    Console.WriteLine(maiorNum);
+    Console.WriteLine($"O maior número é: {maiorNum}");
+    Console.WriteLine(rowPos);
+    Console.WriteLine(colPos);

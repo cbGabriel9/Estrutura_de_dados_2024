@@ -48,6 +48,8 @@ public Person(string name, int age) // o "name" e "age" é minúsculo pois são 
 
 public void Realocate (string location) // O void é sinalizado indicando que vai ser um procedimento, então ele só vai executar o código, não terá um resultado no retorno;
 
+A principal diferença entre o ArrayList e o List é que o primeiro NÃO É fortemente tipado(Se reestringe a receber apenas o tipo especificado).
+
 public Person ()
         {
             Name = "------"; // Quando o método construtor for utilizado e não for passado parâmetros para a construção, a saída será "------";

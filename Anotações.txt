@@ -60,6 +60,8 @@ Quando há apenas uma instrução dentro de um escopo de comando, exemplo: If, f
 
 <> = Signfica que a lista é genérica (Onde vc especifica o tipo);
 
-Atividade:
+Atividade 1:
 
-Crie um novo projeto para um programa que armazene em uma lista informações sobre livros, como nome, editora, autor e números de páginas. Preencha esta lista com no mínimo 5 livros e ao final percorra esta lista e percorra as informações do livros com o maior número de páginas.
+Crie um novo projeto para um programa que armazene em uma lista informações sobre livros, como nome, editora, autor e números de páginas. Preencha esta lista com no mínimo 5 livros e ao final percorra esta lista e mostre as informações do livros com o maior número de páginas.
+
+Atividade 2: Utilizando o conceito de Pilha (Stack) com os métodos Pop() e Push(), escreva um programa que leia uma entrada do usuário e identifique se a palavra informa é ou não um palíndromo.

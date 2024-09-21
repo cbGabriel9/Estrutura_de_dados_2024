@@ -19,7 +19,7 @@ namespace Aula01
         public Classes _classes = Classes.Guerreiro; 
 
         public TipoEnum()
-        {
+        {   
 
         }
 

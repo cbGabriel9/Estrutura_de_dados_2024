@@ -1,4 +1,4 @@
-COMANDOS DO GIT
+ COMANDOS DO GIT
 
 git clone - Clona o repositório
 
@@ -31,6 +31,17 @@ COMANDOS C#
 
 // Comentário de linha
 /* */ Comentário de bloco
+
+
+Arrays Unidimensionais
+
+Declaração: int[] numbers = new int[5]; // O tamanho precisa ser especificado
+
+
+Arrays Bidimensionais
+
+Declaração: int[,] numbers = new int[3, 5]; // Primeiro especifica a linha (De cima pra baixo) e depois a coluna (da esquerda pra direita).
+
 
 LINGUAGEM ORIENTADA A OBJETO
 

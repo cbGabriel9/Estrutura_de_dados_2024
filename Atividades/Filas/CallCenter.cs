@@ -9,7 +9,7 @@ namespace Filas
     public class CallCenter
     {
         private int _counter = 0;
-        public Queue<IncomingCall>? Calls { get; set; }
+        public Stack<IncomingCall>? Calls { get; set; }
         public CallCenter()
         {
             Calls = [];
@@ -25,7 +25,7 @@ namespace Filas
                 CallTime = DateTime.Now
             };
 
-            Calls!.Enqueue(call);
+            Calls!.Push(call);
         }
 
 
@@ -34,7 +34,7 @@ namespace Filas
             // Validação: Verificar se tem atendimentos na fila
             if (Calls!.Count > 0)
             {
-                IncomingCall call = Calls.Dequeue();
+                IncomingCall call = Calls.Pop();
                 call.Consultant = consultant;
                 call.StartTime = DateTime.Now;
 

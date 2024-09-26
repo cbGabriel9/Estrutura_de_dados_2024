@@ -124,6 +124,3 @@ if (valor is not null)
 }
 
 Atividade 25/09
-
-Escreva um programa que para auxiliar empregadores de uma loja a encontrar a localização em que um produto deveria se encontrar, imagine que cada empregador tem um telefone com a sua aplicação, que deve ser usada para escanear um código do produto e lhe dizer em que prateleira deve estar. Elas devem estar nomeadas de A1 até C9. Deve resolver este problema em uma tabela Hash utilizando a classe do tipo dicionário e a chave deve ser uma string para o código de barras e o valor da localização. Faça a carga de no mínimo 20 produtos contendo 5 em cada prateleira diferente e deve perguntar ao usuário o código do produto e responder a localização da prateleira e não esqueça, seu vadio, de tratar os erros e enviar mensagens obscuras para os empregadores.
-

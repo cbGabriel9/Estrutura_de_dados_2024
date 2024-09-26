@@ -90,3 +90,40 @@ PUSH: Adiciona itens na pilha
 PROVA 1: Array, ArrayList, Lista generica, Pilha, conceito de C# e práticas de escrita da linguagem.
 
 o @ faz com que seja apresentado no console assim como esta no código as linhas
+
+Hash Table
+
+Consiste em índices e valores, a grande diferença é que pode setar um índice de int ou string.
+
+try
+{
+ // Neste bloco você coloca a parte do código que pode dar erro 
+} catch()
+{
+ // Neste bloco você coloca a ação que o código irá executar caso ocorra o erro
+}
+
+Exemplo:
+
+try
+{
+    var = secretMembers["4"];
+}
+catch (Exception ex)
+{
+    System.Console.WriteLine("Erro ao obter valor do quarto");
+    System.Console.WriteLine(ex.Message);
+}
+
+Outra forma de obter o valor e evitar o erro
+
+secretMembers.TryGetValue("4", out string? valor);
+if (valor is not null)
+{
+    System.Console.WriteLine($"Chave 2: {valor}");
+}
+
+Atividade 25/09
+
+Escreva um programa que para auxiliar empregadores de uma loja a encontrar a localização em que um produto deveria se encontrar, imagine que cada empregador tem um telefone com a sua aplicação, que deve ser usada para escanear um código do produto e lhe dizer em que prateleira deve estar. Elas devem estar nomeadas de A1 até C9. Deve resolver este problema em uma tabela Hash utilizando a classe do tipo dicionário e a chave deve ser uma string para o código de barras e o valor da localização. Faça a carga de no mínimo 20 produtos contendo 5 em cada prateleira diferente e deve perguntar ao usuário o código do produto e responder a localização da prateleira e não esqueça, seu vadio, de tratar os erros e enviar mensagens obscuras para os empregadores.
+

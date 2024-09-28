@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks.Dataflow;
 
+
+//                  Criação de objeto da classe e Pegando valor do usuário
 // Person person = new();
 
 // System.Console.WriteLine("Qual seu nome?");
@@ -14,6 +16,8 @@ using System.Threading.Tasks.Dataflow;
 // names[1] = "Mariana";
 // names[2] = "Pedrinho";
 
+
+//                    Iteração dos arrays bidimensionais
 
 // for (int r = 0; r < 3; r++)
 // {
@@ -29,8 +33,10 @@ using System.Threading.Tasks.Dataflow;
 // }
 // person.Talk();
 
-Random random = new();
 
-int numeroAleatorioIntervalo = random.Next(10, 51);
-Console.WriteLine("Número aleatório entre 10 e 50: " + numeroAleatorioIntervalo);
+//                            Função Random
+// Random random = new();
+
+// int numeroAleatorioIntervalo = random.Next(10, 51); // Valor mínimo e máximo
+// Console.WriteLine("Número aleatório entre 10 e 50: " + numeroAleatorioIntervalo);
 

@@ -1,8 +1,6 @@
 ﻿using Teste;
 using System.Collections.Generic;
 using System.Threading.Tasks.Dataflow;
-
-
 //                  Criação de objeto da classe e Pegando valor do usuário
 // Person person = new();
 
@@ -40,3 +38,39 @@ using System.Threading.Tasks.Dataflow;
 // int numeroAleatorioIntervalo = random.Next(10, 51); // Valor mínimo e máximo
 // Console.WriteLine("Número aleatório entre 10 e 50: " + numeroAleatorioIntervalo);
 
+int[] vetor1 = new int[] {1, 2, 3};
+
+
+//IndeOf (Retorna o índice do valor especificado)
+System.Console.WriteLine("IndexOf");
+int indice1 = Array.IndexOf(vetor1, 2);
+System.Console.WriteLine(indice1);
+
+
+//Reverse (Inverte a ordem dos valores no array)
+
+System.Console.WriteLine("Reverse");
+
+Array.Reverse(vetor1);
+
+foreach(int item in vetor1)
+{
+    System.Console.WriteLine(item);
+}
+
+
+//Sort (Coloca os valores dentro do array em forma crescente)
+Array.Sort(vetor1);
+foreach(int item in vetor1)
+{
+    System.Console.WriteLine(item);
+}
+
+// Método de soma
+
+int v1, v2;
+
+v1 = Convert.ToInt32(Console.ReadLine());
+v2 = Convert.ToInt32(Console.ReadLine());
+
+Métodos.soma(v1, v2);

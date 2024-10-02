@@ -74,3 +74,9 @@ v1 = Convert.ToInt32(Console.ReadLine());
 v2 = Convert.ToInt32(Console.ReadLine());
 
 Métodos.soma(v1, v2);
+
+int[] array = new int[5];
+
+array[4] = 2;
+
+System.Console.WriteLine(array[4]);

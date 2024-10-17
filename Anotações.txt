@@ -131,3 +131,6 @@ Bubble Sort: Menos eficiente. Cada elemento do índice será comparado com seu p
 Selection Sort: Pegava o primeiro índice e comparava com toda a lista, e coloca ela na sua determinada posição. Exemplo: 5 3 2 1 4. Analisando o número 5, ele comparava com todos e o colocova na sua posição, ou seja, o último.
 Insertion Sort: Simples e eficiente quando aplicado em pequenas listas. É verificado da esquerda pra direita. Quando ele verifica qual número dos dois primeiros é menor, ele parte para o terceiro, verificando o terceiro com o segundo e o primeiro. Após isso é verificado o 4 com todos os anteriores e etc.
 Quick Sort: É o algoritmo mais organizado e eficiente na ordenação por comparação. Ele pega o primeiro índice e verificar com todos os outros a esquerda o primeiro menor número. Quando ele achar esse número ele troca de posição com ele, agora passando para o segundo índice e verificando o primeiro menor número, após achar ele, troca de posição, até deixar na sequência.
+
+SEMINÁRIO DE SHELL SORT:
+pontos positivos, negativos, casos de uso, implementação, história, quem inventou, comparar com outros.

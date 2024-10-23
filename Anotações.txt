@@ -134,3 +134,16 @@ Quick Sort: É o algoritmo mais organizado e eficiente na ordenação por compar
 
 SEMINÁRIO DE SHELL SORT:
 pontos positivos, negativos, casos de uso, implementação, história, quem inventou, comparar com outros.
+
+
+TREE
+
+Raíz - Principal nó
+
+Nó filho - Filho do Root
+
+Leaf - Nós que encerram a árvore
+
+Subtree - É um galho que ramifica pra dois ou mais galhos ou leafs
+
+Estudar: Nullable operator

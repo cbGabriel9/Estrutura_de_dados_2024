@@ -13,7 +13,7 @@ arrList.AddRange(new int [] {1,2,3});
 
 arrList.Insert(1, 15);
 
-//Já o método insert, me permite incluir o valor desejado na posição especificada no primeiro parâmetro. O .Insert empurra todos os valores para uma posição a mais e adiciona o valor naquela posição
+//Já o método insert, me permite incluir o valor desejado na posição especificada no primeiro parâmetro. O Insert empurra todos os valores para uma posição a mais e adiciona o valor naquela posição
 
 // Lendo valores da lista
 object primeiro = arrList[0]!; // O "!" indica que o valor vai ser nulo

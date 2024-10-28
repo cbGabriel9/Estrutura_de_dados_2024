@@ -1,31 +1,39 @@
-﻿using BasicTree;
+﻿using ArvoreBinariaCargos;
 
-Tree<string> tree = new ();
+Tree<Person> tree = new Tree<Person>();
+tree.Root = new Node<Person>()
+{
+	Data = new Person
+	{
+		Name = "Gabriel Ceron Bianchi",
+		Role = "CEO"
+	}
+};
 
-// Criou o nó raíz
-tree.Root = new Node<string>(){Data = "Marcin Jamro"};
-
-
-// Criou os três galhos: 50, 1, 150
-tree.Root.Children = 
-                new List<Node<string>>() 
-                {
-                    new Node<string>(){Data = "John Smith", Parent = tree.Root},
-                    new Node<string>(){Data = "Mary Fox", Parent = tree.Root},
-                    new Node<string>(){Data = "Lily Smith", Parent = tree.Root}
-
-                };
-
-// Criou os nós
-Node<string> node12 = new Node<string>(){Data = 12, Parent = tree.Root.Children[0]};
-Node<string> node45 = new Node<string>(){Data = 45, Parent = node12};
-Node<string> node21 = new Node<string>(){Data = 21, Parent = node12};
-
-
-// Atribuiu os filhos ao node 12
-node12.Children!.Add(node45!);
-node12.Children!.Add(node21!);
-
-tree.Root.Children[0].Children?.Add(node12);
-
-tree.PrintTree(tree.Root);
+tree.Root.Children = new List<Node<Person>>()
+{
+	new Node<Person>
+	{
+		Data = new Person
+		{
+			Name = "Thiago Cabeludo",
+			Role = "Gerente de Desenvolvimento"
+		}
+	},
+	new Node<Person>
+	{
+		Data = new Person
+		{
+			Name = "Vinizao",
+			Role = "Gerente de Engenharia"
+		}
+	},
+	new Node<Person>
+	{
+		Data = new Person
+		{
+			Name = "Marcola",
+			Role = "Gerente de Segurança"
+		}
+	}
+};

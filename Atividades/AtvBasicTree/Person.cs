@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace ArvoreBinariaCargos
 {
-	public class Tree<T>
+	public class Person
 	{
-        public  Node<T>? Root { get; set; }
-		public void PrintTree(Node<T> node)
-		{
-            Console.WriteLine("");
-		}
+        public string? Name { get; set; }
+        public string? Role { get; set; }
     }
 }

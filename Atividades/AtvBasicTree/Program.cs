@@ -17,9 +17,9 @@ tree.Root.Children =
                 };
 
 // Criou os nós
-Node<string> node12 = new Node<string>(){Data = 12, Parent = tree.Root.Children[0]};
-Node<string> node45 = new Node<string>(){Data = 45, Parent = node12};
-Node<string> node21 = new Node<string>(){Data = 21, Parent = node12};
+Node<string> node12 = new Node<string>(){Data = "Chris Morris", Parent = tree.Root.Children[0]};
+Node<string> node45 = new Node<string>(){Data = "Jimmy Stewart", Parent = node12};
+Node<string> node21 = new Node<string>(){Data = "Andy Wood", Parent = node12};
 
 
 // Atribuiu os filhos ao node 12

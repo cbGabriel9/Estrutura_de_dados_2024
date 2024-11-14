@@ -149,3 +149,5 @@ Subtree - É um galho que ramifica pra dois ou mais galhos ou leafs
 Nullable operator: Permite que nós atribuamos a uma variável o valor "null". O operador "?" faz essa permissão de valor.
 
 Herança: Permite criar uma classe a partir de outra, utilizando o operador ":". Quando uma classe é criada a partir de outra, você consegue acessar suas propriedades e métodos e criar novos dentro dessa nova classe criada.
+
+Traverse PreOrder: Ele verifica sempre a esquerda, caso não tenha mais um nó na esquerda ele volta pro pai anterior e vai pra direita, após a primeira direita ele vai para a esquerda e faz tudo novamente, conferindo se tem mais esquerda se não tiver ele volta pro pai anterior, vai pra direita e por ai vai até finalizar.

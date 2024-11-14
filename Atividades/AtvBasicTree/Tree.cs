@@ -9,19 +9,18 @@ namespace AtvBasicTree
     {
         public TreeNode<T> Root { get; set; }
 
-        public void PrintTree(TreeNode<T> node)
+        public void PrintTree(TreeNode<T> node, string indent = "")
         {
-            System.Console.WriteLine($"Level: {node.GetHeight()}");
-            System.Console.WriteLine($"Node: {node.Data}");
-            System.Console.WriteLine();
+            if (node == null)
+                return;
 
-            if(node.Children!.Count() > 0)
+            Console.WriteLine(indent + node.Data);
+
+            foreach (var child in node.Children)
             {
-                foreach(var i in node.Children!)
-                {
-                    PrintTree(i);               
-                     }
+                PrintTree(child, indent + "  ");
             }
         }
     }
+
 }

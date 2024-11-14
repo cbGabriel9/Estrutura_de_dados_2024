@@ -50,4 +50,4 @@ company.Root.Children[2].Children = new List<TreeNode<Person>>()
     }
 };
 
-tree.PrintTree(tree.Root);
+company.PrintTree(company.Root);

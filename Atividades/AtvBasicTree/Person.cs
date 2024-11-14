@@ -1,22 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace AtvBasicTree
+public class Person
 {
-    public class Person
-    {
-            public int Id { get; set; }
-            public string Name { get; set; }
-            public string Role { get; set; }
-            public Person() { }
-            public Person(int id, string name, string role)
-            {
-                Id = id;
-                Name = name;
-                Role = role;
-            }
-        }
+    public int Id { get; }
+    public string Name { get; }
+    public string Position { get; }
 
+    public Person(int id, string name, string position)
+    {
+        Id = id;
+        Name = name;
+        Position = position;
     }
+
+    public override string ToString()
+    {
+        return $"|{Name} - {Position} - {Id}|";
+    }
+}

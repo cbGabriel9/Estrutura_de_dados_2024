@@ -1,69 +1,53 @@
-﻿using ArvoreBinariaCargos;
+﻿using AtvBasicTree;
 
-Tree<Person> tree = new Tree<Person>();
-tree.Root = new Node<Person>()
+Tree<int> tree = new Tree<int>();
+tree.Root = new TreeNode<int>() { Data = 100 };
+tree.Root.Children = new List<TreeNode<int>>
 {
-	Data = new Person
-	{
-		Name = "Gabriel Ceron Bianchi",
-		Role = "CEO"
-	}
+    new TreeNode<int>() { Data = 50, Parent = tree.Root },
+    new TreeNode<int>() { Data = 1, Parent = tree.Root },
+    new TreeNode<int>() { Data = 150, Parent = tree.Root }
+};
+tree.Root.Children[2].Children = new List<TreeNode<int>>()
+{
+    new TreeNode<int>()
+    { 
+        Data = 30, 
+        Parent = tree.Root.Children[2] 
+    }
 };
 
-<<<<<<< HEAD
-// Criou o nó raíz
-tree.Root = new Node<string>(){Data = "Marcin Jamro"};
-
-
-// Criou os três galhos: 50, 1, 150
-tree.Root.Children = 
-                new List<Node<string>>() 
-                {
-                    new Node<string>(){Data = "John Smith", Parent = tree.Root},
-                    new Node<string>(){Data = "Mary Fox", Parent = tree.Root},
-                    new Node<string>(){Data = "Lily Smith", Parent = tree.Root}
-
-                };
-
-// Criou os nós
-Node<string> node12 = new Node<string>(){Data = "Chris Morris", Parent = tree.Root.Children[0]};
-Node<string> node45 = new Node<string>(){Data = "Jimmy Stewart", Parent = node12};
-Node<string> node21 = new Node<string>(){Data = "Andy Wood", Parent = node12};
-
-
-// Atribuiu os filhos ao node 12
-node12.Children!.Add(node45!);
-node12.Children!.Add(node21!);
-
-tree.Root.Children[0].Children?.Add(node12);
+Tree<Person> company = new Tree<Person>();
+company.Root = new TreeNode<Person>()
+{
+    Data = new Person(100, "Gabriel Gadeia", "CEO"),
+    Parent = null
+};
+company.Root.Children = new List<TreeNode<Person>>()
+{
+    new TreeNode<Person>()
+    {
+        Data = new Person(1, "Thigas", "Head of Development"),
+        Parent = company.Root
+    },
+    new TreeNode<Person>()
+    {
+        Data = new Person(50, "Igor Boxeador", "Head of Research"),
+        Parent = company.Root
+    },
+    new TreeNode<Person>()
+    {
+        Data = new Person(150, "Vinizao Urso", "Head of Sales"),
+        Parent = company.Root
+    }
+};
+company.Root.Children[2].Children = new List<TreeNode<Person>>()
+{
+    new TreeNode<Person>()
+    {
+        Data = new Person(30, "Mayra Meiga", "Sales Specialist"),
+        Parent = company.Root.Children[2]
+    }
+};
 
 tree.PrintTree(tree.Root);
-=======
-tree.Root.Children = new List<Node<Person>>()
-{
-	new Node<Person>
-	{
-		Data = new Person
-		{
-			Name = "Thiago Cabeludo",
-			Role = "Gerente de Desenvolvimento"
-		}
-	},
-	new Node<Person>
-	{
-		Data = new Person
-		{
-			Name = "Vinizao",
-			Role = "Gerente de Engenharia"
-		}
-	},
-	new Node<Person>
-	{
-		Data = new Person
-		{
-			Name = "Marcola",
-			Role = "Gerente de Segurança"
-		}
-	}
-};
->>>>>>> 4bc12f437642a09048ea11894ee55e400c84c164
